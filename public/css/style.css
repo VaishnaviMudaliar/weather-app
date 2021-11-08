@@ -3,13 +3,18 @@ body {
   width: 800px;
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
-  background-image: url("../images/weather.png");
+  background-image: url("../images/weather.jpg");
   background-size : cover;
 }
+
+
 .container {
   width: 600px;
   margin: 0 auto;
 }
+
+
+
 fieldset {
   display: block;
   -webkit-margin-start: 0px;
@@ -27,6 +32,9 @@ fieldset {
   min-width: -webkit-min-content;
   padding: 30px;
 }
+
+
+
 .ghost-input {
   display: block;
   font-weight:300;
@@ -34,7 +42,6 @@ fieldset {
   font-size: 25px;
   border:0px;
   outline: none;
-  width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;

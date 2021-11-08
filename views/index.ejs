@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>
-    Weatherly/title>
-    <link rel="stylesheet" href="../style.css">
+    <title>Weatherly</title>
+    <link rel="stylesheet"  type = "text/css" href="/css/style.css">
     <link rel="shortcut icon" href="/favicon.ico">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
   </head>
+
+  
   <body>
 
   <div class = "container">
@@ -19,7 +20,16 @@
   <input name = "city" type = "text"  placeholder = "Enter a city " required class =  "ghost-input"  />
 
   <input type = "submit" id = "submit" value = "Get Weather "  class = "ghost-button"/>
-  </form>
+  </form> 
+  
+  <!--  this is the ejs template engine -->
+  <% if(weather !== null){%>
+  <p><%=weather%></p>
+  <%}%> 
+  <% if(error !== null){ %>
+  <p><%=error%></p>
+  <%}%>
+
   </fieldset>
   </div>
 
